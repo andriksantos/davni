@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAVNI — Solución &amp; Confianza · Aire Acondicionado &amp; Instalación Eléctrica</title>
+  <meta name="description" content="DAVNI — Solución & Confianza. Servicio profesional de mantenimiento, reparación e instalación de aire acondicionado e instalaciones eléctricas residenciales y comerciales en Honduras." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- SVG SPRITES (hidden) ──────────────────────────────────── -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- snowflake / AC -->
+  <symbol id="ico-ac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/>
+    <polyline points="6 6 12 2 18 6"/><polyline points="18 18 12 22 6 18"/>
+    <polyline points="6 18 2 12 6 6"/><polyline points="18 6 22 12 18 18"/>
+  </symbol>
+  <!-- wrench -->
+  <symbol id="ico-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+  </symbol>
+  <!-- bolt / electric -->
+  <symbol id="ico-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+  </symbol>
+  <!-- home -->
+  <symbol id="ico-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+  </symbol>
+  <!-- building -->
+  <symbol id="ico-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="13" height="18"/><path d="M16 8h5l1 13H16"/><line x1="7" y1="7" x2="7" y2="7.01"/><line x1="11" y1="7" x2="11" y2="7.01"/><line x1="7" y1="11" x2="7" y2="11.01"/><line x1="11" y1="11" x2="11" y2="11.01"/><line x1="7" y1="15" x2="7" y2="15.01"/><line x1="11" y1="15" x2="11" y2="15.01"/>
+  </symbol>
+  <!-- tool / install -->
+  <symbol id="ico-install" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2 20h20"/><path d="M5 20V8l7-6 7 6v12"/><path d="M9 20v-5h6v5"/>
+  </symbol>
+  <!-- check -->
+  <symbol id="ico-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"/>
+  </symbol>
+  <!-- calendar -->
+  <symbol id="ico-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+  </symbol>
+  <!-- clock -->
+  <symbol id="ico-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+  </symbol>
+  <!-- shield -->
+  <symbol id="ico-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  </symbol>
+  <!-- map-pin -->
+  <symbol id="ico-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+  </symbol>
+  <!-- phone -->
+  <symbol id="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.6 18.9a19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </symbol>
+  <!-- whatsapp -->
+  <symbol id="ico-wa" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+  </symbol>
+  <!-- star / quality -->
+  <symbol id="ico-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+  </symbol>
+  <!-- search / diagnostic -->
+  <symbol id="ico-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+  </symbol>
+  <!-- tag / price -->
+  <symbol id="ico-price" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>
+  </symbol>
+  <!-- arrow-right -->
+  <symbol id="ico-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+  </symbol>
+</svg>
+
+<!-- ══════════════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="assets/logo-davni.jpg" alt="DAVNI" style="height:38px; width:auto; object-fit:contain; filter:brightness(0) invert(1);" />
+    </a>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#reparacion">Reparación</a>
+      <a href="#instalacion">Instalación</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#cotizar" class="btn btn-accent" style="padding:10px 20px; font-size:.75rem;">Cotizar Ahora</a>
+    </div>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="nav-mobile" id="mob-menu">
+    <a href="#servicios">Servicios</a>
+    <a href="#reparacion">Reparación</a>
+    <a href="#instalacion">Instalación</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#cotizar">Cotizar Ahora</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════ -->
+<section id="hero">
+  <!-- Parallax layers -->
+  <div class="hero-layer hero-layer-1" id="hl1"></div>
+  <div class="hero-layer hero-layer-2" id="hl2"></div>
+  <div class="hero-layer hero-layer-3" id="hl3"></div>
+
+  <div class="container">
+    <div class="hero-content">
+
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-dot"></div>
+          <span class="hero-eyebrow-text">Solución &amp; Confianza · Honduras</span>
+        </div>
+        <h1 class="hero-title">
+          Expertos en<br>
+          <span class="accent">Aire Acondicionado</span><br>
+          e Instalación Eléctrica
+        </h1>
+        <p class="hero-sub">
+          Mantenimiento, reparación e instalación profesional de sistemas de climatización y redes eléctricas residenciales y comerciales.
+        </p>
+        <div class="hero-ctas">
+          <a href="#cotizar" class="btn btn-accent">
+            Solicitar Cotización
+            <svg width="16" height="16"><use href="#ico-arr"/></svg>
+          </a>
+          <a href="#servicios" class="btn btn-ghost">Ver Servicios</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="hm-item">
+            <div class="hm-num">5+</div>
+            <div class="hm-label">Años de experiencia</div>
+          </div>
+          <div class="hm-item">
+            <div class="hm-num">500+</div>
+            <div class="hm-label">Clientes atendidos</div>
+          </div>
+          <div class="hm-item">
+            <div class="hm-num">100%</div>
+            <div class="hm-label">Garantía en el trabajo</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right — floating cards -->
+      <div class="hero-visual">
+        <div class="hv-card">
+          <div class="hvc-pulse"></div>
+          <div class="hvc-icon">
+            <svg width="22" height="22" style="color:var(--sky)"><use href="#ico-ac"/></svg>
+          </div>
+          <div class="hvc-title">Mini Split</div>
+          <div class="hvc-sub">Instalación y mantenimiento</div>
+        </div>
+        <div class="hv-card">
+          <div class="hvc-pulse"></div>
+          <div class="hvc-icon">
+            <svg width="22" height="22" style="color:var(--sky)"><use href="#ico-bolt"/></svg>
+          </div>
+          <div class="hvc-title">Instalación Eléctrica</div>
+          <div class="hvc-sub">Residencial y comercial</div>
+        </div>
+        <div class="hv-card">
+          <div class="hvc-pulse"></div>
+          <div class="hvc-icon">
+            <svg width="22" height="22" style="color:var(--sky)"><use href="#ico-wrench"/></svg>
+          </div>
+          <div class="hvc-title">Reparación</div>
+          <div class="hvc-sub">Diagnóstico y solución rápida</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SERVICIOS
+══════════════════════════════════════════════════ -->
+<section id="servicios">
+  <div class="container">
+    <div class="services-head reveal">
+      <div>
+        <span class="label">Lo que hacemos</span>
+        <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+      </div>
+      <a href="#cotizar" class="btn btn-primary" style="flex-shrink:0;">Cotizar</a>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="svc-card reveal d1">
+        <div class="svc-icon">
+          <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+        </div>
+        <div class="svc-title">Mantenimiento de A/C</div>
+        <div class="svc-desc">Limpieza profunda, revisión de componentes y calibración para mantener tu equipo en condiciones óptimas y extender su vida útil.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Mini Split</span>
+          <span class="svc-tag">Piso Techo</span>
+          <span class="svc-tag">Cassette</span>
+          <span class="svc-tag">VRF</span>
+          <span class="svc-tag">Paquete</span>
+        </div>
+      </div>
+
+      <div class="svc-card reveal d2">
+        <div class="svc-icon">
+          <svg style="color:var(--blue)"><use href="#ico-wrench"/></svg>
+        </div>
+        <div class="svc-title">Reparación de A/C</div>
+        <div class="svc-desc">Diagnóstico profesional y reparación de fallas mecánicas, eléctricas y de refrigeración en cualquier tipo de equipo de climatización.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Compresor</span>
+          <span class="svc-tag">Refrigerante</span>
+          <span class="svc-tag">Capacitor</span>
+          <span class="svc-tag">Tuberías</span>
+        </div>
+      </div>
+
+      <div class="svc-card reveal d3">
+        <div class="svc-icon">
+          <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
+        </div>
+        <div class="svc-title">Instalación de A/C</div>
+        <div class="svc-desc">Instalación completa de cualquier sistema de aire acondicionado con materiales de primera calidad y acabados profesionales.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Todos los tipos</span>
+          <span class="svc-tag">Residencial</span>
+          <span class="svc-tag">Comercial</span>
+        </div>
+      </div>
+
+      <div class="svc-card reveal d1">
+        <div class="svc-icon">
+          <svg style="color:var(--blue)"><use href="#ico-home"/></svg>
+        </div>
+        <div class="svc-title">Eléctrico Residencial</div>
+        <div class="svc-desc">Instalación y reparación de centros de carga, tomacorrientes 110V/220V e iluminación para el hogar.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Centro de carga</span>
+          <span class="svc-tag">Tomacorrientes</span>
+          <span class="svc-tag">Iluminación</span>
+        </div>
+      </div>
+
+      <div class="svc-card reveal d2">
+        <div class="svc-icon">
+          <svg style="color:var(--blue)"><use href="#ico-building"/></svg>
+        </div>
+        <div class="svc-title">Eléctrico Comercial</div>
+        <div class="svc-desc">Soluciones eléctricas industriales para negocios: tomacorrientes, iluminación comercial, centros de carga y transferencias automáticas.</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Centro de carga</span>
+          <span class="svc-tag">Transfer</span>
+          <span class="svc-tag">Iluminación</span>
+        </div>
+      </div>
+
+      <div class="svc-card dark reveal d3">
+        <div class="svc-icon">
+          <svg style="color:var(--sky)"><use href="#ico-phone"/></svg>
+        </div>
+        <div class="svc-title">¿Necesitas ayuda?</div>
+        <div class="svc-desc">Contáctanos directamente y te asesoramos sin ningún costo.</div>
+        <a href="#cotizar" class="btn btn-accent" style="align-self:center; margin-top:8px;">Cotizar Gratis</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     REPARACIÓN
+══════════════════════════════════════════════════ -->
+<section id="reparacion">
+  <div class="container">
+    <div class="repairs-grid">
+
+      <div class="reveal-left">
+        <span class="label">Reparación</span>
+        <h2 class="section-title">Diagnóstico y <span>Reparación</span> Especializada</h2>
+        <p class="section-desc">Identificamos y solucionamos cualquier falla con equipos de diagnóstico profesional y repuestos de calidad.</p>
+
+        <div class="repairs-list">
+          <div class="rep-item">
+            <div class="rep-num">01</div>
+            <div>
+              <div class="rep-title">Cambio de Tubería</div>
+              <div class="rep-desc">Reemplazo de líneas de refrigerante dañadas para restablecer la eficiencia del sistema.</div>
+            </div>
+          </div>
+          <div class="rep-item">
+            <div class="rep-num">02</div>
+            <div>
+              <div class="rep-title">Cambio de Compresor</div>
+              <div class="rep-desc">Sustitución del compresor con repuestos originales o de alta compatibilidad.</div>
+            </div>
+          </div>
+          <div class="rep-item">
+            <div class="rep-num">03</div>
+            <div>
+              <div class="rep-title">Carga de Refrigerante</div>
+              <div class="rep-desc">Recarga de gas (R-22, R-410A, R-32) con equipos de medición certificados.</div>
+            </div>
+          </div>
+          <div class="rep-item">
+            <div class="rep-num">04</div>
+            <div>
+              <div class="rep-title">Detección y Reparación de Fugas de Gas</div>
+              <div class="rep-desc">Localización precisa con detector electrónico y reparación permanente del punto de fuga.</div>
+            </div>
+          </div>
+          <div class="rep-item">
+            <div class="rep-num">05</div>
+            <div>
+              <div class="rep-title">Cambio de Capacitor y Componentes Eléctricos</div>
+              <div class="rep-desc">Reemplazo de capacitores, relés, tarjetas electrónicas y otros componentes críticos.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual block -->
+      <div class="repair-block reveal-right">
+        <div class="rb-icon">
+          <svg style="color:var(--sky)"><use href="#ico-search"/></svg>
+        </div>
+        <div class="rb-title">Diagnóstico Profesional</div>
+        <div class="rb-sub">Usamos equipos especializados para identificar el problema exacto antes de cualquier intervención. Presupuesto sin compromiso.</div>
+        <div class="rb-checks">
+          <div class="rb-check">
+            <div class="rb-check-icon"><svg style="color:var(--sky)"><use href="#ico-check"/></svg></div>
+            Medición de presiones de refrigerante
+          </div>
+          <div class="rb-check">
+            <div class="rb-check-icon"><svg style="color:var(--sky)"><use href="#ico-check"/></svg></div>
+            Análisis eléctrico con multímetro digital
+          </div>
+          <div class="rb-check">
+            <div class="rb-check-icon"><svg style="color:var(--sky)"><use href="#ico-check"/></svg></div>
+            Detección de fugas por ultrasonido
+          </div>
+          <div class="rb-check">
+            <div class="rb-check-icon"><svg style="color:var(--sky)"><use href="#ico-check"/></svg></div>
+            Revisión de tarjetas electrónicas
+          </div>
+          <div class="rb-check">
+            <div class="rb-check-icon"><svg style="color:var(--sky)"><use href="#ico-check"/></svg></div>
+            Garantía en todos los trabajos realizados
+          </div>
+        </div>
+        <a href="#cotizar" class="btn btn-accent" style="margin-top:28px;">
+          Solicitar Diagnóstico
+          <svg width="14" height="14"><use href="#ico-arr"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     INSTALACIÓN
+══════════════════════════════════════════════════ -->
+<section id="instalacion">
+  <div class="inst-bg-grid"></div>
+  <div class="container">
+
+    <div class="inst-header reveal">
+      <div>
+        <span class="label">Instalación</span>
+        <h2 class="section-title light">Instalación <span>Profesional</span></h2>
+        <p class="section-desc light">Ejecutamos instalaciones completas con los más altos estándares técnicos y de seguridad.</p>
+      </div>
+      <a href="#cotizar" class="btn btn-accent" style="flex-shrink:0;">Pedir Cotización</a>
+    </div>
+
+    <div class="inst-grid">
+
+      <!-- AC types -->
+      <div class="inst-card reveal d1">
+        <div class="inst-card-head">
+          <div class="inst-icon">
+            <svg style="color:var(--sky)"><use href="#ico-ac"/></svg>
+          </div>
+          <div>
+            <div class="inst-card-title">Aire Acondicionado</div>
+            <div class="inst-card-sub">Todo tipo de sistema</div>
+          </div>
+        </div>
+        <div class="inst-items">
+          <div class="inst-item"><span class="inst-item-n">01</span> Mini Split (pared)</div>
+          <div class="inst-item"><span class="inst-item-n">02</span> Piso Techo</div>
+          <div class="inst-item"><span class="inst-item-n">03</span> Cassette (cielo raso)</div>
+          <div class="inst-item"><span class="inst-item-n">04</span> Sistema VRF / VRV</div>
+          <div class="inst-item"><span class="inst-item-n">05</span> Paquete / Rooftop</div>
+        </div>
+      </div>
+
+      <!-- Residential -->
+      <div class="inst-card reveal d2">
+        <div class="inst-card-head">
+          <div class="inst-icon">
+            <svg style="color:var(--sky)"><use href="#ico-home"/></svg>
+          </div>
+          <div>
+            <div class="inst-card-title">Eléctrico Residencial</div>
+            <div class="inst-card-sub">Para el hogar</div>
+          </div>
+        </div>
+        <div class="inst-items">
+          <div class="inst-item"><span class="inst-item-n">01</span> Centro de carga (panel)</div>
+          <div class="inst-item"><span class="inst-item-n">02</span> Tomacorrientes 110V</div>
+          <div class="inst-item"><span class="inst-item-n">03</span> Tomacorrientes 220V</div>
+          <div class="inst-item"><span class="inst-item-n">04</span> Iluminación interior / exterior</div>
+        </div>
+      </div>
+
+      <!-- Commercial full width -->
+      <div class="inst-card full reveal">
+        <div class="inst-card-head">
+          <div class="inst-icon">
+            <svg style="color:var(--sky)"><use href="#ico-building"/></svg>
+          </div>
+          <div>
+            <div class="inst-card-title">Eléctrico Comercial</div>
+            <div class="inst-card-sub">Para negocios y empresas</div>
+          </div>
+        </div>
+        <div class="inst-items">
+          <div class="inst-item"><span class="inst-item-n">01</span> Tomacorrientes industriales</div>
+          <div class="inst-item"><span class="inst-item-n">02</span> Iluminación comercial</div>
+          <div class="inst-item"><span class="inst-item-n">03</span> Centro de carga trifásico</div>
+          <div class="inst-item"><span class="inst-item-n">04</span> Transfer automático / manual</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CTA BAND
+══════════════════════════════════════════════════ -->
+<div id="cta-band">
+  <div class="container">
+    <div class="cta-band-inner">
+      <div class="reveal-left">
+        <div class="ctab-title">¿Tu equipo tiene problemas?<br>Llámanos hoy mismo.</div>
+        <div class="ctab-sub">Diagnóstico sin costo · Respuesta rápida · Garantía incluida</div>
+      </div>
+      <div class="ctab-actions reveal-right">
+        <a href="#cotizar" class="btn btn-primary" style="background:var(--white); color:var(--blue);">
+          Cotizar en Línea
+          <svg width="14" height="14"><use href="#ico-arr"/></svg>
+        </a>
+        <button class="btn btn-wa" data-wa data-wa-msg="¡Hola! Necesito ayuda con mi equipo de aire acondicionado. ¿Pueden ayudarme?">
+          <svg width="16" height="16"><use href="#ico-wa"/></svg>
+          WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     COTIZACIÓN — MULTI-STEP FORM
+══════════════════════════════════════════════════ -->
+<section id="cotizar">
+  <div class="container">
+    <div class="quote-wrap">
+
+      <!-- Info column -->
+      <div>
+        <span class="label reveal">Cotización gratuita</span>
+        <h2 class="section-title reveal">Solicita tu <span>Cotización</span></h2>
+        <p class="section-desc reveal">Completa el formulario en menos de 2 minutos y te enviamos el presupuesto directo por WhatsApp.</p>
+
+        <div class="quote-perks">
+          <div class="qperk reveal d1">
+            <div class="qperk-icon">
+              <svg style="color:var(--blue)"><use href="#ico-bolt"/></svg>
+            </div>
+            <div>
+              <div class="qperk-title">Respuesta en menos de 1 hora</div>
+              <div class="qperk-desc">Te contactamos de inmediato durante horario de atención.</div>
+            </div>
+          </div>
+          <div class="qperk reveal d2">
+            <div class="qperk-icon">
+              <svg style="color:var(--blue)"><use href="#ico-price"/></svg>
+            </div>
+            <div>
+              <div class="qperk-title">Sin costos ocultos</div>
+              <div class="qperk-desc">Precio claro y transparente desde el primer contacto.</div>
+            </div>
+          </div>
+          <div class="qperk reveal d3">
+            <div class="qperk-icon">
+              <svg style="color:var(--blue)"><use href="#ico-shield"/></svg>
+            </div>
+            <div>
+              <div class="qperk-title">Garantía en el trabajo</div>
+              <div class="qperk-desc">Respaldamos cada servicio con garantía por escrito.</div>
+            </div>
+          </div>
+          <div class="qperk reveal d4">
+            <div class="qperk-icon">
+              <svg style="color:var(--blue)"><use href="#ico-cal"/></svg>
+            </div>
+            <div>
+              <div class="qperk-title">Tú eliges la fecha</div>
+              <div class="qperk-desc">Agendamos el servicio en el día y hora que mejor te convenga.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal">
+        <div class="form-card">
+
+          <!-- Step indicator -->
+          <div class="fp-bar">
+            <div class="fp-node active">
+              <div class="fp-circle">1</div>
+              <div class="fp-label">Servicio</div>
+            </div>
+            <div class="fp-node">
+              <div class="fp-circle">2</div>
+              <div class="fp-label">Equipo</div>
+            </div>
+            <div class="fp-node">
+              <div class="fp-circle">3</div>
+              <div class="fp-label">Detalles</div>
+            </div>
+            <div class="fp-node">
+              <div class="fp-circle">4</div>
+              <div class="fp-label">Fecha</div>
+            </div>
+            <div class="fp-node">
+              <div class="fp-circle">5</div>
+              <div class="fp-label">Contacto</div>
+            </div>
+          </div>
+
+          <div class="fp-body">
+
+            <!-- STEP 1 — Tipo de servicio -->
+            <div class="f-step active" id="step1">
+              <div class="fstep-title">¿Qué servicio necesitas?</div>
+              <div class="fstep-sub">Selecciona el tipo de servicio que requieres.</div>
+              <div class="opts">
+                <button class="opt" data-val="Mantenimiento de Aire Acondicionado">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+                  Mantenimiento A/C
+                </button>
+                <button class="opt" data-val="Reparación de Aire Acondicionado">
+                  <svg style="color:var(--blue)"><use href="#ico-wrench"/></svg>
+                  Reparación A/C
+                </button>
+                <button class="opt" data-val="Instalación de Aire Acondicionado">
+                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
+                  Instalación A/C
+                </button>
+                <button class="opt" data-val="Instalación Eléctrica Residencial">
+                  <svg style="color:var(--blue)"><use href="#ico-home"/></svg>
+                  Eléctrico Residencial
+                </button>
+                <button class="opt" data-val="Instalación Eléctrica Comercial">
+                  <svg style="color:var(--blue)"><use href="#ico-building"/></svg>
+                  Eléctrico Comercial
+                </button>
+                <button class="opt" data-val="No estoy seguro / Otro">
+                  <svg style="color:var(--blue)"><use href="#ico-search"/></svg>
+                  No estoy seguro
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2 — Tipo de equipo -->
+            <div class="f-step" id="step2">
+              <div class="fstep-title">¿Qué tipo de equipo tienes?</div>
+              <div class="fstep-sub">Selecciona el sistema de A/C que aplica a tu caso.</div>
+              <div class="opts">
+                <button class="opt" data-val="Mini Split">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+                  Mini Split
+                </button>
+                <button class="opt" data-val="Piso Techo">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+                  Piso Techo
+                </button>
+                <button class="opt" data-val="Cassette">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+                  Cassette
+                </button>
+                <button class="opt" data-val="VRF / VRV">
+                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
+                  VRF / VRV
+                </button>
+                <button class="opt" data-val="Paquete / Rooftop">
+                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
+                  Paquete
+                </button>
+                <button class="opt" data-val="No aplica (servicio eléctrico)">
+                  <svg style="color:var(--blue)"><use href="#ico-bolt"/></svg>
+                  No aplica / Eléctrico
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3 — Descripción -->
+            <div class="f-step" id="step3">
+              <div class="fstep-title">Cuéntanos más</div>
+              <div class="fstep-sub">Más detalles = cotización más precisa.</div>
+              <div class="fields">
+                <div class="field">
+                  <label for="f-desc">¿Cuál es el problema o qué necesitas hacer? *</label>
+                  <textarea id="f-desc" placeholder="Ej: El aire ya no enfría, hace ruido extraño, quiero instalar un Mini Split de 1 tonelada..."></textarea>
+                </div>
+                <div class="field">
+                  <label for="f-loc">Área o zona de la propiedad (opcional)</label>
+                  <input type="text" id="f-loc" placeholder="Ej: Sala principal, cuarto, oficina..." />
+                </div>
+              </div>
+              <div class="fstep-sub" style="margin-bottom:10px;">¿Cuántas unidades necesitas atender?</div>
+              <div class="opts">
+                <button class="opt" data-val="1 unidad">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 1 unidad
+                </button>
+                <button class="opt" data-val="2 unidades">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 2 unidades
+                </button>
+                <button class="opt" data-val="3 unidades">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 3 unidades
+                </button>
+                <button class="opt" data-val="4 o más unidades">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 4 o más
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 4 — Fecha -->
+            <div class="f-step" id="step4">
+              <div class="fstep-title">¿Cuándo lo necesitas?</div>
+              <div class="fstep-sub">Selecciona fecha y hora preferida para el servicio.</div>
+              <div class="fields">
+                <div class="row-2">
+                  <div class="field">
+                    <label for="f-date">Fecha preferida *</label>
+                    <input type="date" id="f-date" />
+                  </div>
+                  <div class="field">
+                    <label for="f-time">Hora preferida</label>
+                    <select id="f-time">
+                      <option value="">Seleccionar...</option>
+                      <option>7:00 AM – 9:00 AM</option>
+                      <option>9:00 AM – 11:00 AM</option>
+                      <option>11:00 AM – 1:00 PM</option>
+                      <option>1:00 PM – 3:00 PM</option>
+                      <option>3:00 PM – 5:00 PM</option>
+                      <option>Cualquier hora</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="fstep-sub" style="margin-bottom:10px;">Nivel de urgencia</div>
+              <div class="opts">
+                <button class="opt" data-val="Urgente (hoy o mañana)">
+                  <svg style="color:var(--blue)"><use href="#ico-bolt"/></svg> Urgente
+                </button>
+                <button class="opt sel" data-val="Esta semana">
+                  <svg style="color:var(--blue)"><use href="#ico-cal"/></svg> Esta semana
+                </button>
+                <button class="opt" data-val="Próximos días (programado)">
+                  <svg style="color:var(--blue)"><use href="#ico-clock"/></svg> Programado
+                </button>
+                <button class="opt" data-val="Flexible">
+                  <svg style="color:var(--blue)"><use href="#ico-star"/></svg> Flexible
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 5 — Contacto -->
+            <div class="f-step" id="step5">
+              <div class="fstep-title">Tus datos de contacto</div>
+              <div class="fstep-sub">Te enviamos la cotización directamente por WhatsApp.</div>
+              <div class="fields">
+                <div class="field">
+                  <label for="f-name">Nombre completo *</label>
+                  <input type="text" id="f-name" placeholder="Tu nombre..." autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="f-phone">Teléfono / WhatsApp *</label>
+                  <input type="tel" id="f-phone" placeholder="+504 9999-9999" autocomplete="tel" />
+                </div>
+                <div class="field">
+                  <label for="f-addr">Dirección o colonia (opcional)</label>
+                  <input type="text" id="f-addr" placeholder="Ej: Col. Kennedy, Tegucigalpa..." />
+                </div>
+                <div class="field">
+                  <label for="f-notes">Información adicional (opcional)</label>
+                  <textarea id="f-notes" placeholder="Cualquier dato que nos ayude a preparar tu cotización..."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 6 — Success -->
+            <div class="f-step" id="step6">
+              <div class="f-success">
+                <div class="fsucc-icon">
+                  <svg style="color:var(--success)"><use href="#ico-check"/></svg>
+                </div>
+                <div class="fsucc-title">¡Solicitud enviada!</div>
+                <div class="fsucc-sub">
+                  Tu cotización fue preparada y enviada a nuestro equipo por WhatsApp.<br>
+                  Te responderemos en menos de 1 hora con tu presupuesto.
+                </div>
+                <button class="btn btn-wa" data-wa data-wa-msg="¡Hola! Acabo de completar el formulario de cotización en su sitio web.">
+                  <svg width="16" height="16"><use href="#ico-wa"/></svg>
+                  Abrir WhatsApp
+                </button>
+              </div>
+            </div>
+
+            <!-- Nav -->
+            <div class="f-nav">
+              <button class="f-back" id="btn-back" disabled>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Atrás
+              </button>
+              <button class="btn btn-primary" id="btn-next">Siguiente</button>
+            </div>
+
+          </div><!-- /.fp-body -->
+        </div><!-- /.form-card -->
+      </div>
+
+    </div><!-- /.quote-wrap -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CONTACTO
+══════════════════════════════════════════════════ -->
+<section id="contacto">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="reveal-left">
+        <span class="label">Contacto</span>
+        <h2 class="section-title light">Estamos <span>Aquí</span> Para Ti</h2>
+        <p class="section-desc light">Comunícate con nosotros y te atendemos de inmediato.</p>
+
+        <div class="contact-items">
+          <div class="ci">
+            <div class="ci-icon">
+              <svg style="color:var(--sky)"><use href="#ico-phone"/></svg>
+            </div>
+            <div>
+              <div class="ci-lbl">WhatsApp / Teléfono</div>
+              <div class="ci-val">+504 9885-7841</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">
+              <svg style="color:var(--sky)"><use href="#ico-clock"/></svg>
+            </div>
+            <div>
+              <div class="ci-lbl">Horario de atención</div>
+              <div class="ci-val">Lunes a Sábado · 7:00 AM – 6:00 PM</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">
+              <svg style="color:var(--sky)"><use href="#ico-pin"/></svg>
+            </div>
+            <div>
+              <div class="ci-lbl">Cobertura</div>
+              <div class="ci-val">Honduras — Servicio a domicilio</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">
+              <svg style="color:var(--sky)"><use href="#ico-shield"/></svg>
+            </div>
+            <div>
+              <div class="ci-lbl">Garantía</div>
+              <div class="ci-val">Garantía en todos nuestros trabajos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WA block -->
+      <div class="contact-wa reveal-right">
+        <div class="cwa-icon">
+          <svg style="color:#25D366"><use href="#ico-wa"/></svg>
+        </div>
+        <div class="cwa-title">Escríbenos directamente</div>
+        <div class="cwa-sub">Nuestro equipo está disponible por WhatsApp para atenderte de forma rápida y personalizada.</div>
+        <div class="cwa-num">+504 9885-7841</div>
+        <button class="btn btn-wa" data-wa data-wa-msg="¡Hola! Quiero información sobre sus servicios de aire acondicionado y electricidad.">
+          <svg width="16" height="16"><use href="#ico-wa"/></svg>
+          Escribir por WhatsApp
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <img src="assets/logo-davni.jpg" alt="DAVNI" style="height:30px; width:auto; object-fit:contain; filter:brightness(0) invert(0.6);" />
+      </div>
+      <div class="foot-copy">© 2025 DAVNI · Solución &amp; Confianza · Honduras</div>
+      <div class="foot-phone">+504 9885-7841</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a id="wa-float"
+   href="https://wa.me/50498857841?text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20sus%20servicios."
+   target="_blank"
+   rel="noopener"
+   title="Escríbenos por WhatsApp">
+  <svg><use href="#ico-wa"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
