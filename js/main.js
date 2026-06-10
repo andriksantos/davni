@@ -5,7 +5,7 @@
 
 'use strict';
 
-const WA = '50498857841';
+const WA = '50496679577';
 
 /* ── Navbar ─────────────────────────────────────────────── */
 const navbar = document.getElementById('navbar');
