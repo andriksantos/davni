@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ═══ SEO PRIMARIO ═══ -->
-  <title>DAVNI | Aire Acondicionado e Instalación Eléctrica en Honduras</title>
+  <title>Reparación e Instalación de Aires Acondicionados | Davni</title>
   <meta name="description" content="DAVNI — Solución & Confianza. Mantenimiento, reparación e instalación de aire acondicionado e instalaciones eléctricas residenciales y comerciales en toda Honduras: Tegucigalpa, San Pedro Sula, La Ceiba y más. Cotización gratis por WhatsApp." />
   <meta name="keywords" content="aire acondicionado Honduras, instalación eléctrica Honduras, reparación de aire acondicionado, mantenimiento de mini split, electricista Honduras, instalación de mini split, técnico de aire acondicionado Tegucigalpa, electricista San Pedro Sula" />
   <meta name="author" content="DAVNI" />
@@ -22,13 +22,13 @@
   <meta property="og:locale" content="es_HN" />
   <meta property="og:site_name" content="DAVNI" />
   <meta property="og:url" content="https://andriksantos.com/davni/" />
-  <meta property="og:title" content="DAVNI | Aire Acondicionado e Instalación Eléctrica en Honduras" />
+  <meta property="og:title" content="Reparación e Instalación de Aires Acondicionados | Davni" />
   <meta property="og:description" content="Mantenimiento, reparación e instalación de aire acondicionado e instalaciones eléctricas residenciales y comerciales en toda Honduras. Cotización gratis por WhatsApp." />
   <meta property="og:image" content="https://andriksantos.com/davni/assets/logo-davni.jpg" />
 
   <!-- ═══ TWITTER CARD ═══ -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DAVNI | Aire Acondicionado e Instalación Eléctrica en Honduras" />
+  <meta name="twitter:title" content="Reparación e Instalación de Aires Acondicionados | Davni" />
   <meta name="twitter:description" content="Mantenimiento, reparación e instalación de aire acondicionado e instalaciones eléctricas en toda Honduras. Cotización gratis por WhatsApp." />
   <meta name="twitter:image" content="https://andriksantos.com/davni/assets/logo-davni.jpg" />
 
@@ -250,33 +250,229 @@
         </div>
       </div>
 
-      <!-- Right — floating cards -->
-      <div class="hero-visual">
-        <div class="hv-card">
-          <div class="hvc-pulse"></div>
-          <div class="hvc-icon">
-            <svg width="22" height="22" style="color:var(--sky)"><use href="#ico-ac"/></svg>
+      <!-- Right — cotizador funcional -->
+      <div class="hero-quote">
+        <span class="hq-label">Cotización gratuita</span>
+        <h2 class="hq-title">Solicita tu <span>Cotización</span></h2>
+
+        <div class="form-card" id="cotizar">
+
+          <!-- Step indicator -->
+          <div class="fp-bar">
+            <div class="fp-node active">
+              <div class="fp-circle">1</div>
+              <div class="fp-label">Servicio</div>
+            </div>
+            <div class="fp-node">
+              <div class="fp-circle">2</div>
+              <div class="fp-label">Equipo</div>
+            </div>
+            <div class="fp-node">
+              <div class="fp-circle">3</div>
+              <div class="fp-label">Detalles</div>
+            </div>
+            <div class="fp-node">
+              <div class="fp-circle">4</div>
+              <div class="fp-label">Fecha</div>
+            </div>
+            <div class="fp-node">
+              <div class="fp-circle">5</div>
+              <div class="fp-label">Contacto</div>
+            </div>
           </div>
-          <div class="hvc-title">Mini Split</div>
-          <div class="hvc-sub">Instalación y mantenimiento</div>
-        </div>
-        <div class="hv-card">
-          <div class="hvc-pulse"></div>
-          <div class="hvc-icon">
-            <svg width="22" height="22" style="color:var(--sky)"><use href="#ico-bolt"/></svg>
-          </div>
-          <div class="hvc-title">Instalación Eléctrica</div>
-          <div class="hvc-sub">Residencial y comercial</div>
-        </div>
-        <div class="hv-card">
-          <div class="hvc-pulse"></div>
-          <div class="hvc-icon">
-            <svg width="22" height="22" style="color:var(--sky)"><use href="#ico-wrench"/></svg>
-          </div>
-          <div class="hvc-title">Reparación</div>
-          <div class="hvc-sub">Diagnóstico y solución rápida</div>
-        </div>
-      </div>
+
+          <div class="fp-body">
+
+            <!-- STEP 1 — Tipo de servicio -->
+            <div class="f-step active" id="step1">
+              <div class="fstep-title">¿Qué servicio necesitas?</div>
+              <div class="fstep-sub">Selecciona el tipo de servicio que requieres.</div>
+              <div class="opts">
+                <button class="opt" data-val="Mantenimiento de Aire Acondicionado">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+                  Mantenimiento A/C
+                </button>
+                <button class="opt" data-val="Reparación de Aire Acondicionado">
+                  <svg style="color:var(--blue)"><use href="#ico-wrench"/></svg>
+                  Reparación A/C
+                </button>
+                <button class="opt" data-val="Instalación de Aire Acondicionado">
+                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
+                  Instalación A/C
+                </button>
+                <button class="opt" data-val="Instalación Eléctrica Residencial">
+                  <svg style="color:var(--blue)"><use href="#ico-home"/></svg>
+                  Eléctrico Residencial
+                </button>
+                <button class="opt" data-val="Instalación Eléctrica Comercial">
+                  <svg style="color:var(--blue)"><use href="#ico-building"/></svg>
+                  Eléctrico Comercial
+                </button>
+                <button class="opt" data-val="No estoy seguro / Otro">
+                  <svg style="color:var(--blue)"><use href="#ico-search"/></svg>
+                  No estoy seguro
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2 — Tipo de equipo -->
+            <div class="f-step" id="step2">
+              <div class="fstep-title">¿Qué tipo de equipo tienes?</div>
+              <div class="fstep-sub">Selecciona el sistema de A/C que aplica a tu caso.</div>
+              <div class="opts">
+                <button class="opt" data-val="Mini Split">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+                  Mini Split
+                </button>
+                <button class="opt" data-val="Piso Techo">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+                  Piso Techo
+                </button>
+                <button class="opt" data-val="Cassette">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
+                  Cassette
+                </button>
+                <button class="opt" data-val="VRF / VRV">
+                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
+                  VRF / VRV
+                </button>
+                <button class="opt" data-val="Paquete / Rooftop">
+                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
+                  Paquete
+                </button>
+                <button class="opt" data-val="No aplica (servicio eléctrico)">
+                  <svg style="color:var(--blue)"><use href="#ico-bolt"/></svg>
+                  No aplica / Eléctrico
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3 — Descripción -->
+            <div class="f-step" id="step3">
+              <div class="fstep-title">Cuéntanos más</div>
+              <div class="fstep-sub">Más detalles = cotización más precisa.</div>
+              <div class="fields">
+                <div class="field">
+                  <label for="f-desc">¿Cuál es el problema o qué necesitas hacer? *</label>
+                  <textarea id="f-desc" placeholder="Ej: El aire ya no enfría, hace ruido extraño, quiero instalar un Mini Split de 1 tonelada..."></textarea>
+                </div>
+                <div class="field">
+                  <label for="f-loc">Área o zona de la propiedad (opcional)</label>
+                  <input type="text" id="f-loc" placeholder="Ej: Sala principal, cuarto, oficina..." />
+                </div>
+              </div>
+              <div class="fstep-sub" style="margin-bottom:10px;">¿Cuántas unidades necesitas atender?</div>
+              <div class="opts">
+                <button class="opt" data-val="1 unidad">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 1 unidad
+                </button>
+                <button class="opt" data-val="2 unidades">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 2 unidades
+                </button>
+                <button class="opt" data-val="3 unidades">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 3 unidades
+                </button>
+                <button class="opt" data-val="4 o más unidades">
+                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 4 o más
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 4 — Fecha -->
+            <div class="f-step" id="step4">
+              <div class="fstep-title">¿Cuándo lo necesitas?</div>
+              <div class="fstep-sub">Selecciona fecha y hora preferida para el servicio.</div>
+              <div class="fields">
+                <div class="row-2">
+                  <div class="field">
+                    <label for="f-date">Fecha preferida *</label>
+                    <input type="date" id="f-date" />
+                  </div>
+                  <div class="field">
+                    <label for="f-time">Hora preferida</label>
+                    <select id="f-time">
+                      <option value="">Seleccionar...</option>
+                      <option>7:00 AM – 9:00 AM</option>
+                      <option>9:00 AM – 11:00 AM</option>
+                      <option>11:00 AM – 1:00 PM</option>
+                      <option>1:00 PM – 3:00 PM</option>
+                      <option>3:00 PM – 5:00 PM</option>
+                      <option>Cualquier hora</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="fstep-sub" style="margin-bottom:10px;">Nivel de urgencia</div>
+              <div class="opts">
+                <button class="opt" data-val="Urgente (hoy o mañana)">
+                  <svg style="color:var(--blue)"><use href="#ico-bolt"/></svg> Urgente
+                </button>
+                <button class="opt sel" data-val="Esta semana">
+                  <svg style="color:var(--blue)"><use href="#ico-cal"/></svg> Esta semana
+                </button>
+                <button class="opt" data-val="Próximos días (programado)">
+                  <svg style="color:var(--blue)"><use href="#ico-clock"/></svg> Programado
+                </button>
+                <button class="opt" data-val="Flexible">
+                  <svg style="color:var(--blue)"><use href="#ico-star"/></svg> Flexible
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 5 — Contacto -->
+            <div class="f-step" id="step5">
+              <div class="fstep-title">Tus datos de contacto</div>
+              <div class="fstep-sub">Tu solicitud llega directo a nuestro equipo por WhatsApp y correo electrónico.</div>
+              <div class="fields">
+                <div class="field">
+                  <label for="f-name">Nombre completo *</label>
+                  <input type="text" id="f-name" placeholder="Tu nombre..." autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="f-phone">Teléfono / WhatsApp *</label>
+                  <input type="tel" id="f-phone" placeholder="+504 9999-9999" autocomplete="tel" />
+                </div>
+                <div class="field">
+                  <label for="f-addr">Dirección o colonia (opcional)</label>
+                  <input type="text" id="f-addr" placeholder="Ej: Col. Kennedy, Tegucigalpa..." />
+                </div>
+                <div class="field">
+                  <label for="f-notes">Información adicional (opcional)</label>
+                  <textarea id="f-notes" placeholder="Cualquier dato que nos ayude a preparar tu cotización..."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 6 — Success -->
+            <div class="f-step" id="step6">
+              <div class="f-success">
+                <div class="fsucc-icon">
+                  <svg style="color:var(--success)"><use href="#ico-check"/></svg>
+                </div>
+                <div class="fsucc-title">¡Solicitud enviada!</div>
+                <div class="fsucc-sub">
+                  Tu cotización fue preparada y enviada a nuestro equipo por WhatsApp y correo electrónico.<br>
+                  Te responderemos en menos de 1 hora con tu presupuesto.
+                </div>
+                <button class="btn btn-wa" data-wa data-wa-msg="¡Hola! Acabo de completar el formulario de cotización en su sitio web.">
+                  <svg width="16" height="16"><use href="#ico-wa"/></svg>
+                  Abrir WhatsApp
+                </button>
+              </div>
+            </div>
+
+            <!-- Nav -->
+            <div class="f-nav">
+              <button class="f-back" id="btn-back" disabled>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Atrás
+              </button>
+              <button class="btn btn-primary" id="btn-next">Siguiente</button>
+            </div>
+
+          </div><!-- /.fp-body -->
+        </div><!-- /.form-card -->
+      </div><!-- /.hero-quote -->
 
     </div>
   </div>
@@ -571,284 +767,6 @@
     </div>
   </div>
 </div>
-
-<!-- ══════════════════════════════════════════════════
-     COTIZACIÓN — MULTI-STEP FORM
-══════════════════════════════════════════════════ -->
-<section id="cotizar">
-  <div class="container">
-    <div class="quote-wrap">
-
-      <!-- Info column -->
-      <div>
-        <span class="label reveal">Cotización gratuita</span>
-        <h2 class="section-title reveal">Solicita tu <span>Cotización</span></h2>
-        <p class="section-desc reveal">Completa el formulario en menos de 2 minutos y recibimos tu solicitud por WhatsApp y correo para responderte de inmediato.</p>
-
-        <div class="quote-perks">
-          <div class="qperk reveal d1">
-            <div class="qperk-icon">
-              <svg style="color:var(--blue)"><use href="#ico-bolt"/></svg>
-            </div>
-            <div>
-              <div class="qperk-title">Respuesta en menos de 1 hora</div>
-              <div class="qperk-desc">Te contactamos de inmediato durante horario de atención.</div>
-            </div>
-          </div>
-          <div class="qperk reveal d2">
-            <div class="qperk-icon">
-              <svg style="color:var(--blue)"><use href="#ico-price"/></svg>
-            </div>
-            <div>
-              <div class="qperk-title">Sin costos ocultos</div>
-              <div class="qperk-desc">Precio claro y transparente desde el primer contacto.</div>
-            </div>
-          </div>
-          <div class="qperk reveal d3">
-            <div class="qperk-icon">
-              <svg style="color:var(--blue)"><use href="#ico-shield"/></svg>
-            </div>
-            <div>
-              <div class="qperk-title">Garantía en el trabajo</div>
-              <div class="qperk-desc">Respaldamos cada servicio con garantía por escrito.</div>
-            </div>
-          </div>
-          <div class="qperk reveal d4">
-            <div class="qperk-icon">
-              <svg style="color:var(--blue)"><use href="#ico-cal"/></svg>
-            </div>
-            <div>
-              <div class="qperk-title">Tú eliges la fecha</div>
-              <div class="qperk-desc">Agendamos el servicio en el día y hora que mejor te convenga.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Form -->
-      <div class="reveal">
-        <div class="form-card">
-
-          <!-- Step indicator -->
-          <div class="fp-bar">
-            <div class="fp-node active">
-              <div class="fp-circle">1</div>
-              <div class="fp-label">Servicio</div>
-            </div>
-            <div class="fp-node">
-              <div class="fp-circle">2</div>
-              <div class="fp-label">Equipo</div>
-            </div>
-            <div class="fp-node">
-              <div class="fp-circle">3</div>
-              <div class="fp-label">Detalles</div>
-            </div>
-            <div class="fp-node">
-              <div class="fp-circle">4</div>
-              <div class="fp-label">Fecha</div>
-            </div>
-            <div class="fp-node">
-              <div class="fp-circle">5</div>
-              <div class="fp-label">Contacto</div>
-            </div>
-          </div>
-
-          <div class="fp-body">
-
-            <!-- STEP 1 — Tipo de servicio -->
-            <div class="f-step active" id="step1">
-              <div class="fstep-title">¿Qué servicio necesitas?</div>
-              <div class="fstep-sub">Selecciona el tipo de servicio que requieres.</div>
-              <div class="opts">
-                <button class="opt" data-val="Mantenimiento de Aire Acondicionado">
-                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
-                  Mantenimiento A/C
-                </button>
-                <button class="opt" data-val="Reparación de Aire Acondicionado">
-                  <svg style="color:var(--blue)"><use href="#ico-wrench"/></svg>
-                  Reparación A/C
-                </button>
-                <button class="opt" data-val="Instalación de Aire Acondicionado">
-                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
-                  Instalación A/C
-                </button>
-                <button class="opt" data-val="Instalación Eléctrica Residencial">
-                  <svg style="color:var(--blue)"><use href="#ico-home"/></svg>
-                  Eléctrico Residencial
-                </button>
-                <button class="opt" data-val="Instalación Eléctrica Comercial">
-                  <svg style="color:var(--blue)"><use href="#ico-building"/></svg>
-                  Eléctrico Comercial
-                </button>
-                <button class="opt" data-val="No estoy seguro / Otro">
-                  <svg style="color:var(--blue)"><use href="#ico-search"/></svg>
-                  No estoy seguro
-                </button>
-              </div>
-            </div>
-
-            <!-- STEP 2 — Tipo de equipo -->
-            <div class="f-step" id="step2">
-              <div class="fstep-title">¿Qué tipo de equipo tienes?</div>
-              <div class="fstep-sub">Selecciona el sistema de A/C que aplica a tu caso.</div>
-              <div class="opts">
-                <button class="opt" data-val="Mini Split">
-                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
-                  Mini Split
-                </button>
-                <button class="opt" data-val="Piso Techo">
-                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
-                  Piso Techo
-                </button>
-                <button class="opt" data-val="Cassette">
-                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg>
-                  Cassette
-                </button>
-                <button class="opt" data-val="VRF / VRV">
-                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
-                  VRF / VRV
-                </button>
-                <button class="opt" data-val="Paquete / Rooftop">
-                  <svg style="color:var(--blue)"><use href="#ico-install"/></svg>
-                  Paquete
-                </button>
-                <button class="opt" data-val="No aplica (servicio eléctrico)">
-                  <svg style="color:var(--blue)"><use href="#ico-bolt"/></svg>
-                  No aplica / Eléctrico
-                </button>
-              </div>
-            </div>
-
-            <!-- STEP 3 — Descripción -->
-            <div class="f-step" id="step3">
-              <div class="fstep-title">Cuéntanos más</div>
-              <div class="fstep-sub">Más detalles = cotización más precisa.</div>
-              <div class="fields">
-                <div class="field">
-                  <label for="f-desc">¿Cuál es el problema o qué necesitas hacer? *</label>
-                  <textarea id="f-desc" placeholder="Ej: El aire ya no enfría, hace ruido extraño, quiero instalar un Mini Split de 1 tonelada..."></textarea>
-                </div>
-                <div class="field">
-                  <label for="f-loc">Área o zona de la propiedad (opcional)</label>
-                  <input type="text" id="f-loc" placeholder="Ej: Sala principal, cuarto, oficina..." />
-                </div>
-              </div>
-              <div class="fstep-sub" style="margin-bottom:10px;">¿Cuántas unidades necesitas atender?</div>
-              <div class="opts">
-                <button class="opt" data-val="1 unidad">
-                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 1 unidad
-                </button>
-                <button class="opt" data-val="2 unidades">
-                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 2 unidades
-                </button>
-                <button class="opt" data-val="3 unidades">
-                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 3 unidades
-                </button>
-                <button class="opt" data-val="4 o más unidades">
-                  <svg style="color:var(--blue)"><use href="#ico-ac"/></svg> 4 o más
-                </button>
-              </div>
-            </div>
-
-            <!-- STEP 4 — Fecha -->
-            <div class="f-step" id="step4">
-              <div class="fstep-title">¿Cuándo lo necesitas?</div>
-              <div class="fstep-sub">Selecciona fecha y hora preferida para el servicio.</div>
-              <div class="fields">
-                <div class="row-2">
-                  <div class="field">
-                    <label for="f-date">Fecha preferida *</label>
-                    <input type="date" id="f-date" />
-                  </div>
-                  <div class="field">
-                    <label for="f-time">Hora preferida</label>
-                    <select id="f-time">
-                      <option value="">Seleccionar...</option>
-                      <option>7:00 AM – 9:00 AM</option>
-                      <option>9:00 AM – 11:00 AM</option>
-                      <option>11:00 AM – 1:00 PM</option>
-                      <option>1:00 PM – 3:00 PM</option>
-                      <option>3:00 PM – 5:00 PM</option>
-                      <option>Cualquier hora</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="fstep-sub" style="margin-bottom:10px;">Nivel de urgencia</div>
-              <div class="opts">
-                <button class="opt" data-val="Urgente (hoy o mañana)">
-                  <svg style="color:var(--blue)"><use href="#ico-bolt"/></svg> Urgente
-                </button>
-                <button class="opt sel" data-val="Esta semana">
-                  <svg style="color:var(--blue)"><use href="#ico-cal"/></svg> Esta semana
-                </button>
-                <button class="opt" data-val="Próximos días (programado)">
-                  <svg style="color:var(--blue)"><use href="#ico-clock"/></svg> Programado
-                </button>
-                <button class="opt" data-val="Flexible">
-                  <svg style="color:var(--blue)"><use href="#ico-star"/></svg> Flexible
-                </button>
-              </div>
-            </div>
-
-            <!-- STEP 5 — Contacto -->
-            <div class="f-step" id="step5">
-              <div class="fstep-title">Tus datos de contacto</div>
-              <div class="fstep-sub">Tu solicitud llega directo a nuestro equipo por WhatsApp y correo electrónico.</div>
-              <div class="fields">
-                <div class="field">
-                  <label for="f-name">Nombre completo *</label>
-                  <input type="text" id="f-name" placeholder="Tu nombre..." autocomplete="name" />
-                </div>
-                <div class="field">
-                  <label for="f-phone">Teléfono / WhatsApp *</label>
-                  <input type="tel" id="f-phone" placeholder="+504 9999-9999" autocomplete="tel" />
-                </div>
-                <div class="field">
-                  <label for="f-addr">Dirección o colonia (opcional)</label>
-                  <input type="text" id="f-addr" placeholder="Ej: Col. Kennedy, Tegucigalpa..." />
-                </div>
-                <div class="field">
-                  <label for="f-notes">Información adicional (opcional)</label>
-                  <textarea id="f-notes" placeholder="Cualquier dato que nos ayude a preparar tu cotización..."></textarea>
-                </div>
-              </div>
-            </div>
-
-            <!-- STEP 6 — Success -->
-            <div class="f-step" id="step6">
-              <div class="f-success">
-                <div class="fsucc-icon">
-                  <svg style="color:var(--success)"><use href="#ico-check"/></svg>
-                </div>
-                <div class="fsucc-title">¡Solicitud enviada!</div>
-                <div class="fsucc-sub">
-                  Tu cotización fue preparada y enviada a nuestro equipo por WhatsApp y correo electrónico.<br>
-                  Te responderemos en menos de 1 hora con tu presupuesto.
-                </div>
-                <button class="btn btn-wa" data-wa data-wa-msg="¡Hola! Acabo de completar el formulario de cotización en su sitio web.">
-                  <svg width="16" height="16"><use href="#ico-wa"/></svg>
-                  Abrir WhatsApp
-                </button>
-              </div>
-            </div>
-
-            <!-- Nav -->
-            <div class="f-nav">
-              <button class="f-back" id="btn-back" disabled>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-                Atrás
-              </button>
-              <button class="btn btn-primary" id="btn-next">Siguiente</button>
-            </div>
-
-          </div><!-- /.fp-body -->
-        </div><!-- /.form-card -->
-      </div>
-
-    </div><!-- /.quote-wrap -->
-  </div>
-</section>
 
 <!-- ══════════════════════════════════════════════════
      CONTACTO

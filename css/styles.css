@@ -251,10 +251,10 @@ h2.section-title.light { color: var(--white); }
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 64px;
-  padding: 80px 0;
+  grid-template-columns: .85fr 1.15fr;
+  align-items: start;
+  gap: 48px;
+  padding: 64px 0;
   width: 100%;
 }
 .hero-eyebrow {
@@ -265,7 +265,7 @@ h2.section-title.light { color: var(--white); }
   background: rgba(78,174,224,.08);
   border-radius: 40px;
   padding: 5px 14px 5px 8px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 .hero-eyebrow-dot {
   width: 8px; height: 8px;
@@ -285,21 +285,21 @@ h2.section-title.light { color: var(--white); }
   color: var(--sky);
 }
 .hero-title {
-  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
   font-weight: 900;
-  line-height: 1.0;
+  line-height: 1.08;
   color: var(--white);
   letter-spacing: -.03em;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 .hero-title .accent { color: var(--sky); }
 .hero-sub {
-  font-size: 1.02rem;
+  font-size: .92rem;
   font-weight: 400;
   color: rgba(255,255,255,.58);
-  max-width: 460px;
-  line-height: 1.8;
-  margin-bottom: 38px;
+  max-width: 420px;
+  line-height: 1.7;
+  margin-bottom: 26px;
 }
 .hero-ctas {
   display: flex;
@@ -308,21 +308,21 @@ h2.section-title.light { color: var(--white); }
 }
 .hero-metrics {
   display: flex;
-  gap: 36px;
-  margin-top: 56px;
-  padding-top: 32px;
+  gap: 24px;
+  margin-top: 30px;
+  padding-top: 20px;
   border-top: 1px solid rgba(255,255,255,.09);
 }
 .hm-item {}
 .hm-num {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: var(--sky);
   line-height: 1;
   letter-spacing: -.03em;
 }
 .hm-label {
-  font-size: .72rem;
+  font-size: .66rem;
   font-weight: 600;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -330,59 +330,30 @@ h2.section-title.light { color: var(--white); }
   margin-top: 5px;
 }
 
-/* Hero right — visual cards */
-.hero-visual {
+/* Hero right — cotizador funcional */
+.hero-quote {
   position: relative;
-  height: 440px;
 }
-.hv-card {
-  position: absolute;
-  background: rgba(255,255,255,.055);
-  border: 1px solid rgba(78,174,224,.18);
-  border-radius: 14px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 22px 24px;
-  animation: cardFloat linear infinite;
-  will-change: transform;
-}
-.hv-card:nth-child(1) { top: 0;   left: 0;   width: 200px; animation-duration: 7s; animation-delay: 0s; }
-.hv-card:nth-child(2) { top: 70px; right: 0; width: 210px; animation-duration: 9s; animation-delay: -3s; }
-.hv-card:nth-child(3) { bottom: 40px; left: 30px; width: 220px; animation-duration: 8s; animation-delay: -5s; }
-@keyframes cardFloat {
-  0%,100% { transform: translateY(0px) rotate(0deg); }
-  33%      { transform: translateY(-10px) rotate(.4deg); }
-  66%      { transform: translateY(5px) rotate(-.3deg); }
-}
-.hvc-icon {
-  width: 40px; height: 40px;
-  background: rgba(78,174,224,.18);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
-}
-.hvc-title {
-  font-size: .88rem;
+.hq-label {
+  display: inline-block;
+  font-size: .66rem;
   font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--sky);
+  margin-bottom: 8px;
+}
+.hq-title {
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  font-weight: 800;
   color: var(--white);
-  margin-bottom: 4px;
-  letter-spacing: -.01em;
+  margin-bottom: 16px;
+  letter-spacing: -.02em;
 }
-.hvc-sub {
-  font-size: .75rem;
-  color: rgba(255,255,255,.42);
-  font-weight: 400;
-}
-.hvc-pulse {
-  width: 8px; height: 8px;
-  background: var(--sky);
-  border-radius: 50%;
-  position: absolute;
-  top: 14px; right: 14px;
-  animation: liveDot 2.4s ease-in-out infinite;
-}
+.hq-title span { color: var(--sky); }
+.hero-quote .form-card { box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+.hero-quote .fp-body { padding: 30px 26px; }
+.hero-quote .fstep-title { font-size: 1.15rem; }
 
 /* ══════════════════════════════════════════════════
    SERVICES
@@ -1180,7 +1151,6 @@ footer {
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .hero-content { grid-template-columns: 1fr; }
-  .hero-visual  { display: none; }
   .services-grid { grid-template-columns: repeat(2,1fr); }
   .repairs-grid  { grid-template-columns: 1fr; }
   .inst-grid     { grid-template-columns: 1fr; }
@@ -1208,7 +1178,7 @@ footer {
 
 /* ── Reduced motion ─────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  .btn-accent, #wa-float::before, .hero-eyebrow-dot, .hvc-pulse, .hv-card {
+  .btn-accent, #wa-float::before, .hero-eyebrow-dot {
     animation: none !important;
   }
 }
