@@ -252,9 +252,9 @@ h2.section-title.light { color: var(--white); }
   z-index: 2;
   display: grid;
   grid-template-columns: .85fr 1.15fr;
-  align-items: start;
-  gap: 48px;
-  padding: 64px 0;
+  align-items: center;
+  gap: 40px;
+  padding: 14px 0;
   width: 100%;
 }
 .hero-eyebrow {
@@ -309,8 +309,8 @@ h2.section-title.light { color: var(--white); }
 .hero-metrics {
   display: flex;
   gap: 24px;
-  margin-top: 30px;
-  padding-top: 20px;
+  margin-top: 18px;
+  padding-top: 14px;
   border-top: 1px solid rgba(255,255,255,.09);
 }
 .hm-item {}
@@ -351,9 +351,30 @@ h2.section-title.light { color: var(--white); }
   letter-spacing: -.02em;
 }
 .hq-title span { color: var(--sky); }
+
+/* Compact override — cotizador dentro del hero, sin espacios sobrantes */
 .hero-quote .form-card { box-shadow: 0 20px 60px rgba(0,0,0,.35); }
-.hero-quote .fp-body { padding: 30px 26px; }
-.hero-quote .fstep-title { font-size: 1.15rem; }
+.hero-quote .fp-bar { padding: 14px 22px; }
+.hero-quote .fp-circle { width: 22px; height: 22px; font-size: .64rem; }
+.hero-quote .fp-node::after { top: 11px; }
+.hero-quote .fp-label { font-size: .6rem; }
+.hero-quote .fp-body { padding: 20px 22px; }
+.hero-quote .fstep-title { font-size: 1.02rem; margin-bottom: 3px; }
+.hero-quote .fstep-sub { font-size: .76rem; margin-bottom: 14px; }
+.hero-quote .opts { gap: 8px; margin-bottom: 14px; }
+.hero-quote .opt { padding: 9px 11px; font-size: .76rem; gap: 8px; }
+.hero-quote .opt svg { width: 16px; height: 16px; }
+.hero-quote .fields { gap: 10px; margin-bottom: 14px; }
+.hero-quote .field textarea { min-height: 58px; }
+.hero-quote .field input,
+.hero-quote .field textarea,
+.hero-quote .field select { padding: 8px 12px; font-size: .84rem; }
+.hero-quote .f-nav { padding-top: 6px; margin-top: 4px; }
+.hero-quote .f-success { padding: 4px 0; }
+.hero-quote .fsucc-icon { width: 48px; height: 48px; margin: 0 auto 12px; }
+.hero-quote .fsucc-icon svg { width: 24px; height: 24px; }
+.hero-quote .fsucc-title { font-size: 1.15rem; margin-bottom: 5px; }
+.hero-quote .fsucc-sub { font-size: .78rem; margin-bottom: 14px; }
 
 /* ══════════════════════════════════════════════════
    SERVICES
@@ -733,46 +754,6 @@ h2.section-title.light { color: var(--white); }
 /* ══════════════════════════════════════════════════
    QUOTE FORM
 ══════════════════════════════════════════════════ */
-#cotizar {
-  padding: 110px 0;
-  background: var(--surface);
-}
-.quote-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1.55fr;
-  gap: 64px;
-  align-items: start;
-}
-.quote-info {}
-.quote-perks {
-  margin-top: 36px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.qperk {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-}
-.qperk-icon {
-  width: 42px; height: 42px;
-  background: var(--ice);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.qperk-icon svg { width: 20px; height: 20px; }
-.qperk-title {
-  font-size: .88rem;
-  font-weight: 700;
-  color: var(--deep);
-  margin-bottom: 3px;
-  letter-spacing: -.01em;
-}
-.qperk-desc { font-size: .8rem; color: var(--mid); }
 
 /* Form card */
 .form-card {
