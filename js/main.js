@@ -6,6 +6,7 @@
 'use strict';
 
 const WA = '50496679577';
+const QUOTE_EMAIL = 'andricksantos1@gmail.com'; // correo que recibe las cotizaciones
 
 /* ── Navbar ─────────────────────────────────────────────── */
 const navbar = document.getElementById('navbar');
@@ -231,6 +232,9 @@ function submitForm() {
 
   const msg = lines.filter(l => l !== null).join('\n');
 
+  // Send a copy by email (fire-and-forget — never blocks the WhatsApp flow)
+  sendQuoteEmail(fechaStr);
+
   // Show success screen
   goStep(steps.length - 1);
 
@@ -238,6 +242,35 @@ function submitForm() {
   setTimeout(() => {
     window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
   }, 700);
+}
+
+/* ── Send quote by email via FormSubmit (no backend needed) ───
+   First-ever submission triggers a one-time confirmation email
+   to QUOTE_EMAIL — it must be approved once for delivery to start. */
+function sendQuoteEmail(fechaStr) {
+  const payload = {
+    _subject: `Nueva cotización DAVNI — ${fd.nombre || 'Sin nombre'}`,
+    _template: 'table',
+    _captcha: 'false',
+    'Servicio solicitado': fd.servicio,
+    'Tipo de equipo': fd.equipo,
+    'Cantidad de unidades': fd.cantidad,
+    'Descripción del trabajo': fd.descripcion,
+    'Área / zona': fd.ubicacion,
+    'Fecha preferida': fechaStr,
+    'Hora preferida': fd.hora,
+    'Urgencia': fd.urgencia,
+    'Nombre': fd.nombre,
+    'Teléfono / WhatsApp': fd.telefono,
+    'Dirección': fd.direccion,
+    'Notas adicionales': fd.notas,
+  };
+
+  fetch(`https://formsubmit.co/ajax/${QUOTE_EMAIL}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(payload),
+  }).catch(err => console.warn('No se pudo enviar la copia por correo:', err));
 }
 
 /* ── Toast error ────────────────────────────────────────── */

@@ -89,7 +89,7 @@ h2.section-title.light { color: var(--white); }
   transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
   line-height: 1;
 }
-.btn:hover { transform: translateY(-2px); }
+.btn:hover { transform: translateY(-2px) scale(1.025); }
 .btn-primary {
   background: var(--blue);
   color: var(--white);
@@ -99,9 +99,15 @@ h2.section-title.light { color: var(--white); }
 .btn-accent {
   background: var(--accent);
   color: var(--white);
-  box-shadow: 0 4px 18px rgba(232,93,47,.35);
+  box-shadow: 0 4px 18px rgba(232,93,47,.35), 0 0 0 0 rgba(232,93,47,.55);
+  animation: ctaPulse 2.4s ease-out infinite;
 }
-.btn-accent:hover { background: #ce4d22; box-shadow: 0 8px 28px rgba(232,93,47,.48); }
+.btn-accent:hover { background: #ce4d22; box-shadow: 0 8px 28px rgba(232,93,47,.48); animation: none; }
+@keyframes ctaPulse {
+  0%   { box-shadow: 0 4px 18px rgba(232,93,47,.35), 0 0 0 0 rgba(232,93,47,.45); }
+  70%  { box-shadow: 0 4px 18px rgba(232,93,47,.35), 0 0 0 13px rgba(232,93,47,0); }
+  100% { box-shadow: 0 4px 18px rgba(232,93,47,.35), 0 0 0 0 rgba(232,93,47,0); }
+}
 .btn-ghost {
   background: rgba(255,255,255,.08);
   color: var(--white);
@@ -152,8 +158,6 @@ h2.section-title.light { color: var(--white); }
   height: 38px;
   width: auto;
   object-fit: contain;
-  /* logo is dark on light bg — invert to white for dark navbar */
-  filter: brightness(0) invert(1);
   transition: filter .3s;
 }
 .nav-links {
@@ -1138,6 +1142,19 @@ footer {
   transition: transform .22s, box-shadow .22s;
   text-decoration: none;
 }
+#wa-float::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #25D366;
+  z-index: -1;
+  animation: waPing 2.2s cubic-bezier(0,0,.25,1) infinite;
+}
+@keyframes waPing {
+  0%   { transform: scale(1);   opacity: .55; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
 #wa-float svg { width: 26px; height: 26px; }
 #wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,.6); }
 
@@ -1187,4 +1204,11 @@ footer {
   .hero-ctas { flex-direction: column; }
   .foot-inner { flex-direction: column; text-align: center; }
   .services-head { flex-direction: column; align-items: flex-start; gap: 16px; }
+}
+
+/* ── Reduced motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .btn-accent, #wa-float::before, .hero-eyebrow-dot, .hvc-pulse, .hv-card {
+    animation: none !important;
+  }
 }
